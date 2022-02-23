@@ -1,0 +1,11 @@
+$bgColor: rgb(7, 99, 70);
+$fontColor: rgb(222, 255, 255);
+$fontFam: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+@mixin buttonStyle($color, $fontsize) {
+  background-color: $color;
+  border-radius: 5px;
+  font-family: $fontFam;
+  color: $bgColor;
+  border: none;
+  font-size: $fontsize;
+}

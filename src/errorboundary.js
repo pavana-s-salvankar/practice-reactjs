@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Styles/navbar.scss';
 class ErrorBoudary extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +14,7 @@ class ErrorBoudary extends Component {
     };
   }
   render() {
-    if (this.state.hasError) return <p> Not visible</p>;
+    if (this.state.hasError) return <p className='errorMessage'> Not visible</p>;
     else return this.props.children;
   }
 }
