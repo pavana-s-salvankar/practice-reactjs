@@ -21,6 +21,3 @@
   color: rgb(211, 221, 153);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.myButton {
-  @include buttonStyle(yellow, 35px);
-}
