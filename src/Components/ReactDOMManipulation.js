@@ -15,11 +15,12 @@ const Comp = () => {
         </button>
       </div>
       <div className='flexRow'>
-        <input ref={nameInput} type='text' placeholder='Enter...'></input>
+        <input className='inp' ref={nameInput} type='text' placeholder='Enter...'></input>
         <button className='myButton' type='submit' onClick={clearInput}>
           Submit
         </button>
       </div>
+     
     </>
   );
 };

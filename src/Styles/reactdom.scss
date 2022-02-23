@@ -4,7 +4,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  input {
+  .myButton {
+    @include buttonStyle(rgb(186, 228, 0), 15px);
+  }
+  .inp {
     height: 30px;
     width: 200px;
     background-color: $bgColor;
@@ -24,7 +27,4 @@
   background-color: $bgColor;
   width: 100px;
   height: 100px;
-}
-.myButton {
-  @include buttonStyle(rgb(186, 228, 0), 15px);
 }
