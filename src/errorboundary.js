@@ -13,7 +13,7 @@ class ErrorBoudary extends Component {
     };
   }
   render() {
-    if (this.state.hasError) return <h1>Something went wrong</h1>;
+    if (this.state.hasError) return <p> Not visible</p>;
     else return this.props.children;
   }
 }
