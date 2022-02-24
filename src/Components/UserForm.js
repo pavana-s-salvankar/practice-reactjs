@@ -2,15 +2,18 @@ import React from 'react';
 import useInput from './CustomHooks/userInput';
 
 const Form = () => {
-  const [lastname, bindLastname] = useInput('');
-  const [firstname, bindFirstname] = useInput('');
-  const handleSubmit = () => {
+  const [lastname, onChangeLastname, resetLastname] = useInput('');
+  const [firstname, onChangeFirstname, resetFirstname] = useInput('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert(`Hello ${firstname} ${lastname}`);
+    resetFirstname();
+    resetLastname();
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input placeholder='Enter Firstname...' value={firstname} {...bindFirstname} />
-      <input placeholder='Enter Lastname...' value={lastname} {...bindLastname} />
+    <form onSubmit={(e) => handleSubmit(e)}>
+      <input placeholder='Enter Firstname...' value={firstname} onChange={onChangeFirstname} />
+      <input placeholder='Enter Lastname...' value={lastname} onChange={onChangeLastname} />
       <button type='submit'>Submit</button>
     </form>
   );
