@@ -1,4 +1,4 @@
-import ErrorBoudary from './Errorboundary';
+import ErrorBoudary from './errorboundary';
 import Hero from './Components/Color';
 import Navbar from './Components/Navbar';
 import './Styles/app.scss';
